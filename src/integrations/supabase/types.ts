@@ -7,15 +7,16 @@ export type Json =
   | Json[]
 
 export type BlogPost = {
-  id: string
-  title: string
-  content: string
-  image_url?: string
-  created_at: string
-  updated_at: string
-  slug: string
-  excerpt: string
-}
+  id: string;
+  title: string;
+  slug: string;
+  content: string;
+  excerpt: string;
+  image_url?: string;
+  created_at: string;
+  updated_at: string;
+  category: string;
+};
 
 export type Database = {
   // Allows to automatically instanciate createClient with right options
